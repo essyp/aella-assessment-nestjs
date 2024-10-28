@@ -18,6 +18,7 @@ export class YoutubeService{
         this.youtubeBaseUrl = config.get('YOUTUBE_BASE_URL')
     }
 
+    // fetch video api call
     public async fetchYoutubeVideo(youtube_id: string)
     {
         try{
@@ -38,6 +39,7 @@ export class YoutubeService{
         }
     }
 
+    // fetch comment api call
     public async fetchYoutubeVideoComments(youtube_id: string, dto: CommentsDto)
     {
         try{

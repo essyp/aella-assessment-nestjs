@@ -16,7 +16,7 @@ export class YoutubeController{
     ) {
     }
 
-
+   // fetch video endpoint
     @Get("video/:youtube_id")
     async fetch(
         @Request() req: Request,
@@ -36,6 +36,7 @@ export class YoutubeController{
         }
     }
 
+    // fetch comments endpoint
     @Get("comments/:youtube_id")
     async comments(
         @Request() req: FastifyRequest,       
