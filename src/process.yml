@@ -1,0 +1,8 @@
+apps:
+  - script: ./dist/main.js
+name: 'app'
+instances: 1
+error_file: ./errors.log
+exec_mode: cluster
+env:
+  NODE_ENV: production
